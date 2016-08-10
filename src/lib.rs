@@ -1,4 +1,4 @@
-extern crate chipmunk_sys as chip;
+pub extern crate chipmunk_sys as chip;
 extern crate void;
 
 macro_rules! forward {
