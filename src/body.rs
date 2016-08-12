@@ -315,9 +315,6 @@ impl <T> BodyRaw<T> {
             chip::cpBodySetVelocity(&mut self.cp_body, chip::cpv(vx, vy));
         }
     }
-
-    // fn set_type
-    // fn setPositionUpdateFunc
 }
 
 impl <T: 'static + Any> UserData<T> for BodyRaw<T> {

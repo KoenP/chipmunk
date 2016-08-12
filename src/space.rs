@@ -45,6 +45,10 @@ impl <T> Space<T> {
         n
     }
 
+    pub unsafe fn get_cp_space(&mut self) -> *mut chip::cpSpace {
+        &mut (*self.raw.get()).cp_space
+    }
+
     /// This function does not release the refcount on the
     /// Rc holding the Raw Space pointer.
     pub unsafe fn into_raw_ptr(self) -> *const () {
